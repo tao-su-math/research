@@ -3,150 +3,184 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="keywords" content="Tao Su, mathematics, home page">
-	<meta name="author" content="Tao Su">
+  <meta name="author" content="Tao Su">
   <title>Tao Su</title>
+
   <link rel="stylesheet" href="css/stylesheet.css">
-  <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  <link href="https://fonts.googleapis.com/css?family=Neuton:400,400i,700,700i" rel="stylesheet">
+
+  <!-- MathJax v3 (only needed if this page contains math) -->
+  <script>
+    MathJax = {
+      tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] }
+    };
   </script>
-  <link href='https://fonts.googleapis.com/css?family=Neuton:400,400i,700,700i' rel='stylesheet'>
- <!-- <link rel="icon" href="https://static.ist.ac.at/ist/images/favicon.ico" /> -->
-	
-		<!-- navigation style -->
-<style>
-	*
-	{
-		padding:0;
-		margin:0;
-	}
-	
-	nav
-	{
-		background-color:black;
-		height:50px;
-	}
-	nav ul
-	{
-		<!--border:1px solid red;-->
-		height:50px;
-		width:1200px;
-		margin:0 auto;
-	}
-	nav ul li
-	{
-		list-style-type:none;
-		width:200px;
-		float:left;
-		text-align:center;
-	}
-	nav ul li a
-	{
-		text-decoration:none;
-		color:white;
-		line-height:50px;
-		display:block;
-	}
-	nav ul li a:hover
-	{
-		background-color:white;
-		color:blue;
-	}
-	
-	p
-	{
-		margin:10px;
-	}
-	
-	</style>
-	
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background-color: #dddddd;   /* classic light gray */
+      color: #000000;
+    }
+
+    nav {
+      background-color: #1b2a41;                 /* deep academic navy */
+      height: 50px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+    }
+
+    nav ul {
+      height: 50px;
+      width: 1200px;
+      margin: 0 auto;
+      padding: 0;
+    }
+
+    nav ul li {
+      list-style-type: none;
+      width: 200px;
+      float: left;
+      text-align: center;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #f2f2f2;            /* softened white */
+      line-height: 50px;
+      display: block;
+      transition: background-color 0.15s ease, color 0.15s ease;
+    }
+
+    /* Hover: clearly lighter navy */
+    nav ul li a:hover {
+      background-color: #3d5578;
+      color: #ffffff;
+    }
+
+    /* Active (current page): unmistakable white + bold */
+    nav ul li a.active {
+      background-color: #ffffff;
+      color: #1b2a41;
+      font-weight: bold;
+    }
+
+    /* Brand link (was an <h3> inside <li>) */
+    nav ul li a.brand {
+      font-weight: bold;
+      font-size: 1.17em;
+    }
+
+    /* White "card" content area on top of the gray page */
+    main {
+      max-width: 900px;
+      margin: 2em auto;
+      padding: 1.5em 2em;
+      background-color: #ffffff;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+    }
+
+    .indent {
+      padding-left: 10px;
+    }
+
+    /* List container */
+    .tight-list {
+      padding-left: 20px;
+    }
+
+    /* Space between list items */
+    .tight-list li {
+      line-height: 1.5;
+      margin-bottom: 0.4em;
+    }
+
+    h2, h3, h4 {
+      margin-top: 1em;
+      margin-bottom: 0.4em;
+    }
+
+    ul.tight-list {
+      margin-top: 0.3em;
+      margin-bottom: 1em;
+    }
+  </style>
 </head>
-	
-	
-	
-	
 
 <body>
-	
-<nav>
-	<ul>
-		
-    <li><h3><a href="../">Su, Tao  苏桃</a></h3></li>
-		
-        <!-- <li><a href="../home">Home</a></li> -->
-		
-        <li><a href="./" class="active">Research</a></li>
-		
-		<!--    <li><a href="notes">Notes</a></li>   -->
-		
-	<li><a href="../teaching">Teaching</a></li>
-		
-        <li><a href="../seminar">Seminar</a></li>
-		
-	</ul>
-</nav>
-	
 
-	
-	<br>
-	
-<br><p><h2 id="Papers">Papers</h2></p></br>
+  <nav>
+    <ul>
+      <li><a href="../" class="brand">Su, Tao  苏桃</a></li>
 
-	<!--
-	<p><li>11. Cell decomposition of Deligne-Lusztig varieties, in preparation.
-		</li></p>
-	
-	<p><li>10. Mirror P=W phenomena for (wild) character varieties, in preparation.
-		</li></p>
+      <!-- <li><a href="../home">Home</a></li> -->
 
-	<p><li>9. A note on the HLRV conjecture, in preparation.
-		</li></p>
-	-->
+      <li><a href="./" class="active">Research</a></li>
 
-	<p><li>8. <a href="https://arxiv.org/abs/2603.27888">Log-concavity from enumerative geometry of planar curve singularities</a>,
-		with Baiting Xie, and Chenglong Yu, arXiv:2603.27888.</li>
-	
-    <p><li>7. <a href="https://arxiv.org/abs/2509.20800">Purity of generalized affine Springer fibers
-		from generic planar curve singularities</a>, with Taiwang Deng, arXiv:2509.20800.</li>
-	
-	<p><li>6. <a href="https://arxiv.org/abs/2408.17301">Integral cohomology of dual boundary complexes
-		is motivic</a>, arXiv:2408.17301.</li>
-	
-	<p><li>5. <a href="https://arxiv.org/abs/2307.16657">Cell decomposition and dual boundary complexes
-		of character varieties</a>, <strong>Advances in Mathematics</strong>, Vol. 498, 2026.</li>
-	</p>
-	<!--
-	(<a href="https://authors.elsevier.com/a/1n7wfRELwrZT">The published version is available for free download until July 9, 2026.</a>)
-	(The main result of this paper proves the weak geometric P=W conjecture
-		of Katzarkov-Noll-Pandit-Simpson for very generic character varieties)
-	-->
-	
-	
-	<p><li>4. <a href="https://arxiv.org/abs/2109.01645">Dual boundary complexes of Betti moduli spaces
-		over the two-sphere with one irregular singularity</a>, <strong>Advances in Mathematics</strong>, Vol. 462, 2025.	
-        </li></p>
-	
-	<p><li>3. <a href="https://arxiv.org/abs/1912.10782">Augmentations are sheaves for Legendrian graphs</a>,
-		with Byung Hee An, and Youngjin Bae, <strong>Journal of Symplectic Geometry</strong>, Vol. 20, 2022.
-	</li></p>
-	
-	<p><li>2. <a href="https://arxiv.org/abs/1911.11563">Augmentations and ruling polynomials for Legendrian graphs</a>,
-		with Byung Hee An, and Youngjin Bae, <strong>Algebraic & Geometric Topology</strong>, Vol. 22, 2022.
-	</li></p>
-		
-	<p><li>1. <a href="https://arxiv.org/abs/1707.04948">Ruling polynomials and augmentations for Legendrian tangles</a>,
-	arXiv:1707.04948. (essentially incorporated in my thesis)</li></p>
+      <!-- <li><a href="notes">Notes</a></li> -->
 
-	<p><li>0. <a href="https://www.proquest.com/openview/26688de030efb25094d4ffa5b032c2fa/1?pq-origsite=gscholar&cbl=18750&diss=y">
-		A Hodge-theoretic study of augmentation varieties associated to Legendrian knots/tangles</a>, Ph.D thesis, ProQuest 2018.
-	</li></p>
-	
-	
-	
-	
-  </body>
+      <li><a href="../teaching">Teaching</a></li>
 
-  </html>
+      <li><a href="../seminar">Seminar</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h2 id="Papers" class="indent">Papers</h2>
+
+    <!--
+    <ul class="tight-list">
+      <li>11. Cell decomposition of Deligne-Lusztig varieties, in preparation.</li>
+      <li>10. Mirror P=W phenomena for (wild) character varieties, in preparation.</li>
+      <li>9. A note on the HLRV conjecture, in preparation.</li>
+    </ul>
+    -->
+
+    <ul class="tight-list">
+      <li>8. <a href="https://arxiv.org/abs/2603.27888">Log-concavity from enumerative geometry of planar curve singularities</a>,
+        with Baiting Xie, and Chenglong Yu, arXiv:2603.27888.</li>
+
+      <li>7. <a href="https://arxiv.org/abs/2509.20800">Purity of generalized affine Springer fibers
+        from generic planar curve singularities</a>, with Taiwang Deng, arXiv:2509.20800.</li>
+
+      <li>6. <a href="https://arxiv.org/abs/2408.17301">Integral cohomology of dual boundary complexes
+        is motivic</a>, arXiv:2408.17301.</li>
+
+      <li>5. <a href="https://arxiv.org/abs/2307.16657">Cell decomposition and dual boundary complexes
+        of character varieties</a>, <strong>Advances in Mathematics</strong>, Vol. 498, 2026.
+        <!--
+        (<a href="https://authors.elsevier.com/a/1n7wfRELwrZT">The published version is available for free download until July 9, 2026.</a>)
+        (The main result of this paper proves the weak geometric P=W conjecture
+        of Katzarkov-Noll-Pandit-Simpson for very generic character varieties)
+        -->
+      </li>
+
+      <li>4. <a href="https://arxiv.org/abs/2109.01645">Dual boundary complexes of Betti moduli spaces
+        over the two-sphere with one irregular singularity</a>, <strong>Advances in Mathematics</strong>, Vol. 462, 2025.</li>
+
+      <li>3. <a href="https://arxiv.org/abs/1912.10782">Augmentations are sheaves for Legendrian graphs</a>,
+        with Byung Hee An, and Youngjin Bae, <strong>Journal of Symplectic Geometry</strong>, Vol. 20, 2022.</li>
+
+      <li>2. <a href="https://arxiv.org/abs/1911.11563">Augmentations and ruling polynomials for Legendrian graphs</a>,
+        with Byung Hee An, and Youngjin Bae, <strong>Algebraic &amp; Geometric Topology</strong>, Vol. 22, 2022.</li>
+
+      <li>1. <a href="https://arxiv.org/abs/1707.04948">Ruling polynomials and augmentations for Legendrian tangles</a>,
+        arXiv:1707.04948. (essentially incorporated in my thesis)</li>
+
+      <li>0. <a href="https://www.proquest.com/openview/26688de030efb25094d4ffa5b032c2fa/1?pq-origsite=gscholar&cbl=18750&diss=y">
+        A Hodge-theoretic study of augmentation varieties associated to Legendrian knots/tangles</a>, Ph.D thesis, ProQuest 2018.</li>
+    </ul>
+  </main>
+
+</body>
+
+</html>
 
 
 
